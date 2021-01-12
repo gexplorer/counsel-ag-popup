@@ -45,7 +45,7 @@
    transient-args
    " "))
 
-(defvar counsel-ag-popup-file-types
+(defvar counsel-ag-popup-file-type-list
   '("actionscript" "ada" "asciidoc" "asm" "batch" "bitbake" "bro" "cc" "cfmx"
     "chpl" "clojure" "coffee" "cpp" "crystal" "csharp" "css" "cython" "delphi"
     "dot" "ebuild" "elisp" "elixir" "elm" "erlang" "factor" "fortran" "fsharp"
@@ -64,7 +64,7 @@
   "Prompt for Ag file type with PROMPT DEF HISTORY."
   (completing-read-multiple
    prompt
-   counsel-ag-popup-file-types
+   counsel-ag-popup-file-type-list
    nil nil
    nil
    history
