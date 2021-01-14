@@ -136,6 +136,11 @@ The third arg HISTORY, if non-nil, specifies a history."
   :argument "--context="
   :reader 'transient-read-number-N+)
 
+(transient-define-argument counsel-ag-popup:=h ()
+  :description "Search hidden files"
+  :shortarg "=h"
+  :argument "--hidden")
+
 (transient-define-argument counsel-ag-popup:-f ()
   :description "Follow symlinks"
   :shortarg "-f"
@@ -203,6 +208,7 @@ The third arg HISTORY, if non-nil, specifies a history."
    (counsel-ag-popup:-C)]
   ["Search options"
    (counsel-ag-popup:-f)
+   (counsel-ag-popup:=h)
    (counsel-ag-popup:-G)
    (counsel-ag-popup:-i)
    (counsel-ag-popup:-m)
