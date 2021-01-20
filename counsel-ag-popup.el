@@ -148,6 +148,7 @@ The third arg HISTORY, if non-nil, specifies a history."
 
 (transient-define-argument counsel-ag-popup:-G ()
   :description "Limit search to filenames matching PATTERN"
+  :class 'transient-option
   :shortarg "-G"
   :argument "--file-search-regex="
   :reader 'counsel-ag-popup-read-pattern)
